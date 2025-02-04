@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SPNDN™ HOME</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="spiderr.png" type="image/png">
+  <link rel="icon" href="spiderr.png" type="image/png" />
   <style>
     @font-face {
       font-family: 'Blurry';
@@ -93,20 +93,24 @@
 </head>
 <body class="bg-white text-gray-400">
   <a class="instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
-  <div class="flex flex-col items-center mt-10 px-4">
-    <img src="ascii-spin.png" alt="SPNDN Logo" class="logo">
-    <h1 class="text-4xl font-bold text-black heading">You're Finally Here.</h1>
-    <div class="nav-container">
-      <a href="index.html">HOME</a>
-      <a href="latest-drop.html">LATEST DROP</a>
-      <a href="catalogue.html">CATALOGUE</a>
-      <a href="spndn-radio.html">SPNDN RADIO</a>
-      <a href="archive.html">ARCHIVE</a>
-      <a href="support.html">SUPPORT</a>
+  <div class="container mx-auto px-4 py-8">
+    <div class="flex flex-col items-center">
+      <img src="ascii-spin.png" alt="SPNDN Logo" class="logo" />
+      <h1 class="mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-black text-center heading">
+        You're Finally Here.
+      </h1>
+      <nav class="mt-6 flex flex-wrap justify-center gap-4 nav-container">
+        <a href="index.html" class="text-red-500 hover:underline">HOME</a>
+        <a href="latest-drop.html" class="text-red-500 hover:underline">LATEST DROP</a>
+        <a href="catalogue.html" class="text-red-500 hover:underline">CATALOGUE</a>
+        <a href="spndn-radio.html" class="text-red-500 hover:underline">SPNDN RADIO</a>
+        <a href="archive.html" class="text-red-500 hover:underline">ARCHIVE</a>
+        <a href="support.html" class="text-red-500 hover:underline">SUPPORT</a>
+      </nav>
     </div>
   </div>
-  <div class="trademark">
+  <footer class="bg-white py-3 fixed bottom-0 w-full text-center text-gray-500 text-xs trademark">
     <p>© 2023-2025 SPNDN™. All rights reserved.</p>
-  </div>
+  </footer>
 </body>
 </html>
