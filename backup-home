@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPNDN™ HOME</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="spiderr.png" type="image/png" />
+  <style>
+    @font-face {
+      font-family: 'Blurry';
+      src: url('https://raw.githack.com/spndncode/spndn-concept/main/blurry.TTF') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @keyframes rotateLogo {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+    .logo {
+      width: 375px;
+      height: auto;
+      animation: rotateLogo 10s infinite linear;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      max-width: 40%;
+      z-index: 1000;
+    }
+    .heading, body {
+      text-align: center;
+      font-size: 1.25rem;
+      margin-top: 20px;
+      font-family: 'Blurry', sans-serif;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    }
+    .trademark {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: gray;
+      background-color: white;
+      padding: 10px 0;
+      font-family: 'Times New Roman', serif;
+    }
+    .nav-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+      margin-top: 20px;
+      width: 100%;
+      border: 1px solid red;
+    }
+    .nav-container a {
+      padding: 10px 15px;
+      color: red;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: box-shadow 0.3s ease;
+      border: 1px solid red;
+      font-family: 'Blurry', sans-serif;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    }
+    .nav-container a:hover {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .instagram-link {
+      position: absolute;
+      top: 30px;
+      right: 60px;
+      font-size: 1rem;
+      color: #C13584;
+      text-decoration: none;
+      background-color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .instagram-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .heading {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+      .logo {
+        width: 300px;
+        max-width: 45%;
+        top: 30px;
+        left: 30px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-400">
+  <a class="instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
+  <img src="ascii-spin.png" alt="SPNDN Logo" class="logo" />
+  <div class="container mx-auto px-4 py-8">
+    <div class="flex flex-col items-center">
+      <h1 class="mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-black text-center heading">
+        WELCOME TO THE BASEMENT.
+      </h1>
+      <nav class="mt-6 flex flex-wrap justify-center nav-container">
+        <a href="index.html" class="text-red-500 hover:underline">HOME</a>
+        <a href="latest-drop.html" class="text-red-500 hover:underline">LATEST DROP</a>
+        <a href="catalogue.html" class="text-red-500 hover:underline">CATALOGUE</a>
+        <a href="spndn-radio.html" class="text-red-500 hover:underline">SPNDN RADIO</a>
+        <a href="archive.html" class="text-red-500 hover:underline">ARCHIVE</a>
+        <a href="support.html" class="text-red-500 hover:underline">SUPPORT</a>
+      </nav>
+    </div>
+  </div>
+  <footer class="bg-white py-3 fixed bottom-0 w-full text-center text-gray-500 text-xs trademark">
+    <p>© 2023-2025 SPNDN™. All rights reserved.</p>
+  </footer>
+</body>
+</html>
