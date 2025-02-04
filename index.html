@@ -48,14 +48,12 @@
     .nav-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       align-items: center;
-      gap: 0;
       margin-top: 20px;
       width: 100%;
       border: 1px solid red;
     }
-    .nav-container a, .nav-container img {
+    .nav-container a {
       padding: 10px 15px;
       color: red;
       text-decoration: none;
@@ -83,10 +81,17 @@
     .instagram-link:hover {
       text-decoration: underline;
     }
+    .dietrying-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+      padding: 5px;
+    }
     .dietrying-img {
-      height: 50px;
+      max-height: 60px;
       width: auto;
-      display: block;
     }
     @media (max-width: 640px) {
       .nav-container {
@@ -114,8 +119,10 @@
       <h1 class="mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-black text-center heading">
         WELCOME TO THE BASEMENT.
       </h1>
-      <nav class="mt-6 flex flex-wrap justify-center nav-container">
-        <img src="DIETRYING.png" alt="DIETRYING Logo" class="dietrying-img">
+      <nav class="mt-6 flex flex-wrap nav-container">
+        <div class="dietrying-container">
+          <img src="DIETRYING.png" alt="DIETRYING Logo" class="dietrying-img">
+        </div>
         <a href="index.html" class="text-red-500 hover:underline">HOME</a>
         <a href="latest-drop.html" class="text-red-500 hover:underline">LATEST DROP</a>
         <a href="catalogue.html" class="text-red-500 hover:underline">CATALOGUE</a>
