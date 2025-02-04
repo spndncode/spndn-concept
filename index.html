@@ -25,31 +25,6 @@
             margin-top: 20px;
         }
 
-        .ascii-box {
-            display: inline-block;
-            border: 2px solid black;
-            padding: 10px;
-            background-color: white;
-            max-width: 100%;
-            overflow-x: auto;
-            font-size: 5px;
-            line-height: 0.8;
-        }
-
-        .ascii-art-container {
-            position: absolute;
-            top: 120px;
-            right: 10px;
-            text-align: right;
-        }
-
-        @media (max-width: 600px) {
-            .ascii-box {
-                font-size: 4px;
-                line-height: 0.7;
-            }
-        }
-
         .trademark {
             position: fixed;
             bottom: 0;
@@ -111,23 +86,13 @@
         </div>
     </div>
 
-    <div class="ascii-art-container">
-        <div class="ascii-box">
-            <pre id="LOCALPARIAH"></pre>
-        </div>
-    </div>
-
-    <script>
-        fetch("LOCALPARIAH.txt")
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById("LOCALPARIAH").textContent = text;
-            });
-    </script>
-
     <div class="trademark">
         <p>© 2023-2025 SPNDN™. All rights reserved. The use of any SPNDN™ intellectual property; including designs, logos, webpages, promotions, or any other intellectual property of SPNDN™ for personal or financial gain is strictly prohibited without permission from the company and is in violation of and punishable under the United States Copyright Act of 1976. If you have questions or concerns, please feel free to contact us via the "SUPPORT" webpage.</p>
     </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
