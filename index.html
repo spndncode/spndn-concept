@@ -28,10 +28,12 @@
       max-width: 40%;
       z-index: 1000;
     }
-    .heading {
+    .heading, body {
       text-align: center;
       font-size: 1.25rem;
       margin-top: 20px;
+      font-family: 'Blurry', sans-serif;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     }
     .trademark {
       position: fixed;
@@ -59,6 +61,8 @@
       font-size: 1.2rem;
       transition: box-shadow 0.3s ease;
       border: 1px solid red;
+      font-family: 'Blurry', sans-serif;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     }
     .nav-container a:hover {
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -77,9 +81,6 @@
     }
     .instagram-link:hover {
       text-decoration: underline;
-    }
-    body {
-      font-family: 'Blurry', sans-serif;
     }
     @media (max-width: 640px) {
       .nav-container {
