@@ -1,18 +1,25 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPNDN™: CATALOGUE</title>
+    <title>SPNDN™: HOME</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @font-face {
+            font-family: 'Blurry';
+            src: url('blurry.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         @keyframes rotateLogo {
             0% { transform: rotateY(0deg); }
             100% { transform: rotateY(360deg); }
         }
 
         .logo {
-            width: 130px;
+            width: 169px;
             height: auto;
             animation: rotateLogo 10s infinite linear;
             display: block;
@@ -21,11 +28,9 @@
 
         .heading {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 1.25rem;
             margin-top: 20px;
         }
-
-       
 
         .trademark {
             position: fixed;
@@ -35,19 +40,15 @@
             color: gray;
             background-color: white;
             padding: 10px 0;
-        }
-
-        .ascii-art-container {
-            margin-top: 30px;
-            text-align: center;
+            font-family: 'Times New Roman', serif;
         }
 
         .nav-container {
             display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 10px;
-            left: 10px;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
         }
 
         .nav-container a {
@@ -55,6 +56,30 @@
             color: red;
             text-decoration: none;
             font-size: 1.2rem;
+            position: relative;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .nav-container a::after {
+            content: "";
+            position: absolute;
+            right: -5px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: black;
+        }
+
+        .nav-container a:last-child::after {
+            display: none;
+        }
+
+        .nav-container a:hover {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Blurry', sans-serif;
         }
     </style>
 </head>
@@ -62,22 +87,20 @@
 
     <div class="flex flex-col items-center mt-10">
         <img src="ascii-spin.png" alt="SPNDN Logo" class="logo">
-        <h1 class="text-4xl font-bold text-black heading">CATALOGUE</h1>
+        <h1 class="text-4xl font-bold text-black heading">Home</h1>
+        <div class="nav-container">
+            <a href="index.html">HOME</a>
+            <a href="latest-drop.html">LATEST DROP</a>
+            <a href="catalogue.html">CATALOGUE</a>
+            <a href="spndn-radio.html">SPNDN RADIO</a>
+            <a href="archive.html">ARCHIVE</a>
+            <a href="support.html">SUPPORT</a>
+        </div>
     </div>
 
-    <div class="nav-container">
-        <a href="index.html">HOME</a>
-        <a href="latest-drop.html">LATEST DROP</a>
-        <a href="catalogue.html">CATALOGUE</a>
-        <a href="spndn-radio.html">SPNDN RADIO</a>
-        <a href="archive.html">ARCHIVE</a>
-        <a href="support.html">SUPPORT</a>
-    </div>
-
-</head>
-<body>
     <div class="trademark">
         <p>© 2023-2025 SPNDN™. All rights reserved. The use of any SPNDN™ intellectual property; including designs, logos, webpages, promotions, or any other intellectual property of SPNDN™ for personal or financial gain is strictly prohibited without permission from the company and is in violation of and punishable under the United States Copyright Act of 1976. If you have questions or concerns, please feel free to contact us via the "SUPPORT" webpage.</p>
     </div>
+
 </body>
 </html>
