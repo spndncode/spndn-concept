@@ -48,13 +48,9 @@
       font-family: 'Times New Roman', serif;
     }
     .nav-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0;
-      margin-top: 20px;
-      width: 100%;
+      display: inline-flex;
       border: 1px solid red;
+      margin: 20px auto 0 auto;
     }
     .nav-container a {
       padding: 10px 15px;
@@ -62,24 +58,11 @@
       text-decoration: none;
       font-size: 1.2rem;
       transition: box-shadow 0.3s ease;
-      border: 1px solid red;
       font-family: 'Blurry', sans-serif;
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     }
     .nav-container a:hover {
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    }
-    .nav-images {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 100%;
-      border: 1px solid red;
-      padding: 10px 0;
-    }
-    .nav-images img {
-      width: 80px;
-      height: auto;
     }
     .social-links {
       position: absolute;
@@ -107,8 +90,7 @@
     }
     @media (max-width: 640px) {
       .nav-container {
-        flex-direction: column;
-        align-items: center;
+        display: inline-flex;
       }
       .heading {
         font-size: 1.5rem;
@@ -138,18 +120,13 @@
     <a class="social-link instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
     <a class="social-link soundcloud-link" href="https://soundcloud.com/money-spendin" target="_blank">Listen on SoundCloud</a>
   </div>
-  <img src="ascii-spin.png" alt="SPNDN Logo" class="logo" />
-  <div class="container mx-auto px-4 py-8">
+  <img src="ascii-spin.png" alt="SPNDN Logo" class="logo spin" />
+  <div class="container mx-auto px-4 py-8" style="text-align:center;">
     <div class="flex flex-col items-center">
       <h1 class="mt-1 text-5xl font-bold text-black text-center heading" style="margin-top: -4px;">
         TUNE IN TO SPNDN RADIO
       </h1>
-      <div class="nav-images">
-        <img src="DIETRYING.png" alt="Diet Trying Logo" class="spin">
-        <img src="bank.png" alt="Second Image" class="spin">
-        <img src="varsity.png" alt="Third Image" class="spin">
-      </div>
-      <nav class="mt-6 flex flex-wrap justify-center nav-container">
+      <nav class="mt-6 nav-container">
         <a href="index.html" class="text-red-500 hover:underline">HOME</a>
         <a href="latest-drop.html" class="text-red-500 hover:underline">LATEST DROP</a>
         <a href="catalogue.html" class="text-red-500 hover:underline">CATALOGUE</a>
