@@ -21,12 +21,14 @@
     .logo {
       width: 375px;
       height: auto;
-      animation: rotateLogo 10s infinite linear;
       position: fixed;
       top: 10px;
       left: 10px;
       max-width: 40%;
       z-index: 1000;
+    }
+    .spin {
+      animation: rotateLogo 10s infinite linear;
     }
     .heading, body {
       text-align: center;
@@ -78,7 +80,6 @@
     .nav-images img {
       width: 80px;
       height: auto;
-      animation: rotateLogo 10s infinite linear;
     }
     .instagram-link {
       position: absolute;
@@ -122,9 +123,9 @@
         WELCOME TO THE BASEMENT.
       </h1>
       <div class="nav-images">
-        <img src="DIETRYING.png" alt="Diet Trying Logo">
-        <img src="bank.png" alt="Second Image">
-        <img src="varsity.png" alt="Third Image">
+        <img src="DIETRYING.png" alt="Diet Trying Logo" class="spin">
+        <img src="bank.png" alt="Second Image" class="spin">
+        <img src="varsity.png" alt="Third Image" class="spin">
       </div>
       <nav class="mt-6 flex flex-wrap justify-center nav-container">
         <a href="index.html" class="text-red-500 hover:underline">HOME</a>
