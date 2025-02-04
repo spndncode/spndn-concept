@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPNDN™ ARCHIVE</title>
+  <title>SPNDN™ HOME</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="spiderr.png" type="image/png">
   <style>
@@ -42,6 +42,7 @@
     }
     .nav-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       margin-top: 20px;
@@ -52,26 +53,10 @@
       color: red;
       text-decoration: none;
       font-size: 1.2rem;
-      position: relative;
       transition: box-shadow 0.3s ease;
-    }
-    .nav-container a::after {
-      content: "";
-      position: absolute;
-      right: -5px;
-      top: 0;
-      height: 100%;
-      width: 2px;
-      background-color: black;
-    }
-    .nav-container a:last-child::after {
-      display: none;
     }
     .nav-container a:hover {
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    }
-    body {
-      font-family: 'Blurry', sans-serif !important;
     }
     .instagram-link {
       position: absolute;
@@ -88,13 +73,29 @@
     .instagram-link:hover {
       text-decoration: underline;
     }
+    body {
+      font-family: 'Blurry', sans-serif;
+    }
+    @media (max-width: 640px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .heading {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+      .logo {
+        width: 120px;
+      }
+    }
   </style>
 </head>
 <body class="bg-white text-gray-400">
-  <a class="instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow SPNDN™ on Instagram For The Latest Updates</a>
-  <div class="flex flex-col items-center mt-10">
+  <a class="instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
+  <div class="flex flex-col items-center mt-10 px-4">
     <img src="ascii-spin.png" alt="SPNDN Logo" class="logo">
-    <h1 class="text-4xl font-bold text-black heading">WELCOME TO THE BASEMENT</h1>
+    <h1 class="text-4xl font-bold text-black heading">You're Finally Here.</h1>
     <div class="nav-container">
       <a href="index.html">HOME</a>
       <a href="latest-drop.html">LATEST DROP</a>
