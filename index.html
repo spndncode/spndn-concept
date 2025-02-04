@@ -81,19 +81,25 @@
       width: 80px;
       height: auto;
     }
-    .instagram-link {
+    .social-link {
       position: absolute;
       top: 30px;
-      right: 60px;
       font-size: 1rem;
-      color: #C13584;
       text-decoration: none;
       background-color: white;
       padding: 5px 10px;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .instagram-link:hover {
+    .instagram-link {
+      right: 150px;
+      color: #C13584;
+    }
+    .soundcloud-link {
+      right: 30px;
+      color: #FF5500;
+    }
+    .social-link:hover {
       text-decoration: underline;
     }
     @media (max-width: 640px) {
@@ -111,11 +117,23 @@
         top: 30px;
         left: 30px;
       }
+      .social-link {
+        top: 10px;
+        font-size: 0.875rem;
+        padding: 4px 8px;
+      }
+      .instagram-link {
+        right: 110px;
+      }
+      .soundcloud-link {
+        right: 10px;
+      }
     }
   </style>
 </head>
 <body class="bg-white text-gray-400">
-  <a class="instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
+  <a class="social-link instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
+  <a class="social-link soundcloud-link" href="https://soundcloud.com/money-spendin" target="_blank">Listen on SoundCloud</a>
   <img src="ascii-spin.png" alt="SPNDN Logo" class="logo" />
   <div class="container mx-auto px-4 py-8">
     <div class="flex flex-col items-center">
