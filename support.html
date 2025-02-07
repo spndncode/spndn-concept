@@ -31,14 +31,26 @@
       animation: rotateLogo 10s infinite linear;
     }
     .heading {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 20px;
+  font-family: 'Blurry', sans-serif;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right, black, gray);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+    body {
       text-align: center;
       font-size: 1.25rem;
       margin-top: 20px;
       font-family: 'Blurry', sans-serif;
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-      background: linear-gradient(to right, black, gray);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
     .trademark {
       position: fixed;
@@ -92,7 +104,7 @@
     }
     .body-text {
       width: calc(100% - 2in);
-      margin: 0.25in auto 1in auto;
+      margin: 0.5in auto 0in auto; /* 1 inch top and bottom margin */
       font-family: 'Times New Roman', serif;
       font-size: 1.728rem;
       color: black;
@@ -121,7 +133,7 @@
         display: inline-block;
       }
       .heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 10px;
       }
       .logo {
@@ -151,14 +163,28 @@
   <img src="ascii-spin.png" alt="SPNDN Logo" class="logo spin" />
   <div class="container mx-auto px-4 py-8 text-center">
     <div class="flex flex-col items-center">
-      <h1 class="mt-1 text-5xl font-bold heading" style="margin-top: -4px;">
-        SUPPORT
-      </h1>
+      <h1 class="heading" style="margin-top: -4px;">SUPPORT</h1>
       <nav class="mt-6 nav-container">
         <a href="index.html">HOME</a>
         <a href="latest-drop.html">LATEST DROP</a>
         <a href="catalogue.html">CATALOGUE</a>
         <a href="spndn-radio.html">SPNDN RADIO</a>
-        <a href="archive.html">
-::contentReference[oaicite:0]{index=0}
- 
+        <a href="archive.html">ARCHIVE</a>
+        <a href="support.html">SUPPORT</a>
+      </nav>
+      <p class="body-text">
+        If you have any questions, comments, or concerns about current/future orders; please contact us by email at <a href="mailto:mnyspndn@gmail.com" class="btn btn-email">mnyspndn@gmail.com</a> or on instagram <a href="https://www.instagram.com/mnyspndn/" target="_blank" class="btn btn-instagram">@mnyspndn</a>. Expected response time is within 2 business days.
+      </p>
+      <p class="body-text">
+        If you are a music artist looking to be featured on SPNDN RADIO, contact <a href="https://www.instagram.com/mnyspndn/" target="_blank" class="btn btn-instagram">@mnyspndn</a> on instagram and we will get back to you as soon as possible to discuss possibilities.
+      </p>
+      <p class="body-text">
+        SPNDN™ is dedicated to providing the best quality product possible for every order, no matter how much time or effort it requires.
+      </p>
+    </div>
+  </div>
+  <footer class="trademark bg-white py-3 fixed bottom-0 w-full text-center text-gray-500 text-xs">
+    <p>© 2023-2025 SPNDN™. All rights reserved.</p>
+  </footer>
+</body>
+</html>
