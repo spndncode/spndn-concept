@@ -30,7 +30,22 @@
     .spin {
       animation: rotateLogo 10s infinite linear;
     }
-    .heading, body {
+    .heading {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 20px;
+      font-family: 'Blurry', sans-serif;
+      background: linear-gradient(to right, #FF69B4, #FF1493);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+    body {
       text-align: center;
       font-size: 1.25rem;
       margin-top: 20px;
@@ -89,7 +104,7 @@
     }
     .body-text {
       width: calc(100% - 2in);
-      margin: 0.25in auto 1in auto;
+      margin: 0.25in auto 1in auto; /* 1 inch bottom margin between paragraphs */
       font-family: 'Times New Roman', serif;
       font-size: 1.728rem;
       color: black;
@@ -118,7 +133,7 @@
         display: inline-block;
       }
       .heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 10px;
       }
       .logo {
@@ -148,9 +163,7 @@
   <img src="ascii-spin.png" alt="SPNDN Logo" class="logo spin" />
   <div class="container mx-auto px-4 py-8 text-center">
     <div class="flex flex-col items-center">
-      <h1 class="mt-1 text-5xl font-bold text-black heading" style="margin-top: -4px;">
-       SUPPORT 
-      </h1>
+      <h1 class="heading" style="margin-top: -4px;">SUPPORT</h1>
       <nav class="mt-6 nav-container">
         <a href="index.html">HOME</a>
         <a href="latest-drop.html">LATEST DROP</a>
@@ -170,7 +183,7 @@
       </p>
     </div>
   </div>
-  <footer class="bg-white py-3 fixed bottom-0 w-full text-center text-gray-500 text-xs trademark">
+  <footer class="trademark bg-white py-3 fixed bottom-0 w-full text-center text-gray-500 text-xs">
     <p>© 2023-2025 SPNDN™. All rights reserved.</p>
   </footer>
 </body>
