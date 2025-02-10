@@ -30,39 +30,33 @@
     .spin {
       animation: rotateLogo 10s infinite linear;
     }
-    .heading, body {
+    .heading {
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 2.5rem;
       margin-top: 20px;
       font-family: 'Blurry', sans-serif;
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-    }
-    .trademark {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      color: gray;
-      background-color: white;
-      padding: 10px 0;
-      font-family: 'Times New Roman', serif;
+      background: linear-gradient(to right, black, gray);
+      -webkit-background-clip: text;
+      color: transparent;
     }
     .nav-container {
-      display: inline-flex;
-      border: 1px solid red;
-      margin: 20px auto 0 auto;
+      display: inline-block;
+      border: 1px solid #FF69B4;
     }
     .nav-container a {
+      display: inline-block;
       padding: 10px 15px;
-      color: red;
+      color: #FF69B4;
       text-decoration: none;
       font-size: 1.2rem;
-      transition: box-shadow 0.3s ease;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
       font-family: 'Blurry', sans-serif;
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     }
     .nav-container a:hover {
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
     }
     .social-links {
       position: absolute;
@@ -74,70 +68,38 @@
     .social-link {
       font-size: 1rem;
       text-decoration: none;
-      background-color: white;
+      background-color: black;
+      color: white;
       padding: 5px 10px;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .instagram-link {
-      color: #C13584;
-    }
-    .soundcloud-link {
-      color: #FF5500;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
     .social-link:hover {
       text-decoration: underline;
-    }
-    @media (max-width: 640px) {
-      .nav-container {
-        display: inline-flex;
-      }
-      .heading {
-        font-size: 1.5rem;
-        margin-top: 10px;
-      }
-      .logo {
-        width: 300px;
-        max-width: 45%;
-        top: 30px;
-        left: 30px;
-      }
-      .social-links {
-        top: 10px;
-        right: 10px;
-        flex-direction: column;
-        gap: 5px;
-      }
-      .social-link {
-        font-size: 0.875rem;
-        padding: 4px 8px;
-      }
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body class="bg-white text-gray-400">
   <div class="social-links">
-    <a class="social-link instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Follow on Instagram</a>
-    <a class="social-link soundcloud-link" href="https://soundcloud.com/money-spendin" target="_blank">Listen on SoundCloud</a>
+    <a class="social-link instagram-link" href="https://www.instagram.com/mnyspndn/" target="_blank">Instagram</a>
+    <a class="social-link soundcloud-link" href="https://soundcloud.com/money-spendin" target="_blank">SPNDN RADIO</a>
   </div>
   <img src="ascii-spin.png" alt="SPNDN Logo" class="logo spin" />
-  <div class="container mx-auto px-4 py-8" style="text-align:center;">
+  <div class="container mx-auto px-4 py-8 text-center">
     <div class="flex flex-col items-center">
-      <h1 class="mt-1 text-5xl font-bold text-black text-center heading" style="margin-top: -4px;">
-        CURRENT CATALOGUE
-      </h1>
+      <h1 class="heading" style="margin-top: -4px;">CURRENT CATALOGUE</h1>
       <nav class="mt-6 nav-container">
-        <a href="index.html" class="text-red-500 hover:underline">HOME</a>
-        <a href="latest-drop.html" class="text-red-500 hover:underline">LATEST DROP</a>
-        <a href="catalogue.html" class="text-red-500 hover:underline">CATALOGUE</a>
-        <a href="spndn-radio.html" class="text-red-500 hover:underline">SPNDN RADIO</a>
-        <a href="archive.html" class="text-red-500 hover:underline">ARCHIVE</a>
-        <a href="support.html" class="text-red-500 hover:underline">SUPPORT</a>
+        <a href="index.html">HOME</a>
+        <a href="latest-drop.html">LATEST DROP</a>
+        <a href="catalogue.html">CATALOGUE</a>
+        <a href="spndn-radio.html">SPNDN RADIO</a>
+        <a href="archive.html">ARCHIVE</a>
+        <a href="support.html">SUPPORT</a>
       </nav>
     </div>
   </div>
-  <footer class="bg-white py-3 fixed bottom-0 w-full text-center text-gray-500 text-xs trademark">
-    <p>© 2023-2025 SPNDN™. All rights reserved.</p>
-  </footer>
 </body>
 </html>
