@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SPNDN™ SUPPORT</title>
+  <title>SPNDN™ HOME</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="spiderr.png" type="image/png" />
   <style>
@@ -163,7 +163,7 @@
   <img src="ascii-spin.png" alt="SPNDN Logo" class="logo spin" />
   <div class="container mx-auto px-4 py-8 text-center">
     <div class="flex flex-col items-center">
-      <h1 class="heading" style="margin-top: -4px;">SUPPORT</h1>
+      <h1 class="heading" style="margin-top: -4px;">WELCOME TO THE BASEMENT</h1>
       <nav class="mt-6 nav-container">
         <a href="index.html">HOME</a>
         <a href="latest-drop.html">LATEST DROP</a>
