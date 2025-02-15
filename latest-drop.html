@@ -86,6 +86,34 @@
       transform: scale(1.1);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+    .file-button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .file-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4in;
+      height: 4in;
+      background-color: black;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-family: 'Blurry', sans-serif;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      border: 2px solid #FF69B4;
+      border-radius: 10px;
+    }
+    .file-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-400">
@@ -97,23 +125,9 @@
   <div>
     <img src="ascii-spin.png" alt="SPNDN Logo" class="logo spin" />
   </div>
-
-  <div class="container mx-auto px-4 py-2 text-center" style="margin-top: 20px; padding-top: 0.1px;">
-    <div class="flex flex-col items-center">
-      <nav class="mt-1 nav-container">
-        <a href="index.html">HOME</a>
-        <a href="latest-drop.html">LATEST DROP</a>
-        <a href="catalogue.html">CATALOGUE</a>
-        <a href="spndn-radio.html">SPNDN™ RADIO</a>
-        <a href="archive.html">ARCHIVE</a>
-        <a href="support.html">SUPPORT</a>
-      </nav>
-      <h1 class="heading" style="margin-top: 0.1in; margin-bottom: 0.1in;">LATEST DROP ! !</h1>
-    </div>
-  </div>
   
-  <footer class="trademark bg-black text-center py-4 fixed bottom-0 left-0 w-full">
-    <p class="text-white text-xs">© 2025 SPNDN™. All rights reserved.</p>
-  </footer>
+  <div class="file-button-container">
+    <a href="maxonfile.c4d" class="file-button">Download maxonfile.c4d</a>
+  </div>
 </body>
 </html>
